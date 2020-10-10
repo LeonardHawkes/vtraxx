@@ -13,8 +13,8 @@ const querystring = require('querystring');
 const cookieParser = require('cookie-parser');
 const { config } = require('./config');
 
-var client_id = '1138d710a9ae46cfa8d048632e14c4dd'; // Your client id
-var client_secret = '185de375301a44e5a114571dfe539c9d'; // Your secret
+var client_id = 'CLIENT ID'; // Your client id
+var client_secret = 'SECRET CODE'; // Your secret
 var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
 
 /**
