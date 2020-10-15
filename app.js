@@ -13,9 +13,9 @@ const querystring = require('querystring');
 const cookieParser = require('cookie-parser');
 const { config } = require('./config');
 
-var client_id = 'CLIENT ID'; // Your client id
-var client_secret = 'SECRET CODE'; // Your secret
-var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
+var client_id = 'Client ID'; // Your client id
+var client_secret = 'Client Secret'; // Your secret
+var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -155,6 +155,6 @@ app.get('/refresh_token', function (req, res) {
 	});
 });
 
-app.listen(process.env.PORT || 3000, function () {
-	console.log('Server is running on port 3000');
+app.listen(process.env.PORT || 8888, function () {
+	console.log('Server is running on port 8888');
 });
